@@ -2,14 +2,23 @@
 //  AppDelegate.h
 //  Mastermind
 //
-//  Created by Der Olli on 02.02.13.
-//  Copyright (c) 2013 FH Koeln. All rights reserved.
+//  Created by Der Olli on 12.02.13.
+//  Copyright __MyCompanyName__ 2013. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import "cocos2d.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppController : NSObject <UIApplicationDelegate, CCDirectorDelegate>
+{
+	UIWindow *window_;
+	UINavigationController *navController_;
 
-@property (strong, nonatomic) UIWindow *window;
+	CCDirectorIOS	*director_;							// weak ref
+}
+
+@property (nonatomic, retain) UIWindow *window;
+@property (readonly) UINavigationController *navController;
+@property (readonly) CCDirectorIOS *director;
 
 @end
