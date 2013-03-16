@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		109A648716F4A9A50055317D /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 109A648616F4A9A50055317D /* GameLayer.m */; };
+		109A648C16F4C40B0055317D /* MainMenuLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 109A648B16F4C40A0055317D /* MainMenuLayer.m */; };
+		109A648F16F4D4570055317D /* startButtonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 109A648D16F4D4570055317D /* startButtonSelected.png */; };
+		109A649016F4D4570055317D /* startButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 109A648E16F4D4570055317D /* startButton.png */; };
+		109A649216F4D64D0055317D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 109A649116F4D64D0055317D /* Default-568h@2x.png */; };
+		109A649416F4D8690055317D /* game_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 109A649316F4D8690055317D /* game_background.png */; };
 		109D9D4516CAD7D500CF6A9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109D9D4416CAD7D500CF6A9A /* QuartzCore.framework */; };
 		109D9D4716CAD7D500CF6A9A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109D9D4616CAD7D500CF6A9A /* OpenGLES.framework */; };
 		109D9D4916CAD7D500CF6A9A /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 109D9D4816CAD7D500CF6A9A /* OpenAL.framework */; };
@@ -136,6 +142,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		109A648516F4A9A50055317D /* GameLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameLayer.h; sourceTree = "<group>"; };
+		109A648616F4A9A50055317D /* GameLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameLayer.m; sourceTree = "<group>"; };
+		109A648A16F4C40A0055317D /* MainMenuLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuLayer.h; sourceTree = "<group>"; };
+		109A648B16F4C40A0055317D /* MainMenuLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuLayer.m; sourceTree = "<group>"; };
+		109A648D16F4D4570055317D /* startButtonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = startButtonSelected.png; path = Resources/startButtonSelected.png; sourceTree = "<group>"; };
+		109A648E16F4D4570055317D /* startButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = startButton.png; path = Resources/startButton.png; sourceTree = "<group>"; };
+		109A649116F4D64D0055317D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		109A649316F4D8690055317D /* game_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = game_background.png; path = Resources/game_background.png; sourceTree = "<group>"; };
 		109D9D4116CAD7D500CF6A9A /* Mastermind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mastermind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		109D9D4416CAD7D500CF6A9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		109D9D4616CAD7D500CF6A9A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -423,6 +437,7 @@
 		109D9D3816CAD7D400CF6A9A = {
 			isa = PBXGroup;
 			children = (
+				109A649116F4D64D0055317D /* Default-568h@2x.png */,
 				109D9D5616CAD7D500CF6A9A /* Mastermind */,
 				109D9D4316CAD7D500CF6A9A /* Frameworks */,
 				109D9D4216CAD7D500CF6A9A /* Products */,
@@ -457,9 +472,13 @@
 			isa = PBXGroup;
 			children = (
 				109D9ECE16CAD7D700CF6A9A /* AppDelegate.h */,
+				109A648A16F4C40A0055317D /* MainMenuLayer.h */,
+				109A648B16F4C40A0055317D /* MainMenuLayer.m */,
 				109D9ECF16CAD7D700CF6A9A /* AppDelegate.m */,
 				109D9ED116CAD7D700CF6A9A /* HelloWorldLayer.h */,
 				109D9ED216CAD7D700CF6A9A /* HelloWorldLayer.m */,
+				109A648516F4A9A50055317D /* GameLayer.h */,
+				109A648616F4A9A50055317D /* GameLayer.m */,
 				109D9ED416CAD7D700CF6A9A /* IntroLayer.h */,
 				109D9ED516CAD7D700CF6A9A /* IntroLayer.m */,
 				109D9D5716CAD7D500CF6A9A /* Resources */,
@@ -472,6 +491,9 @@
 		109D9D5716CAD7D500CF6A9A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				109A649316F4D8690055317D /* game_background.png */,
+				109A648D16F4D4570055317D /* startButtonSelected.png */,
+				109A648E16F4D4570055317D /* startButton.png */,
 				109D9D5816CAD7D500CF6A9A /* Default.png */,
 				109D9D5A16CAD7D500CF6A9A /* Default-Landscape~ipad.png */,
 				109D9D5C16CAD7D500CF6A9A /* fps_images.png */,
@@ -895,6 +917,10 @@
 				109D9D6D16CAD7D500CF6A9A /* Icon@2x.png in Resources */,
 				109D9D7016CAD7D500CF6A9A /* iTunesArtwork in Resources */,
 				109D9EAE16CAD7D700CF6A9A /* ChangeLog in Resources */,
+				109A648F16F4D4570055317D /* startButtonSelected.png in Resources */,
+				109A649016F4D4570055317D /* startButton.png in Resources */,
+				109A649216F4D64D0055317D /* Default-568h@2x.png in Resources */,
+				109A649416F4D8690055317D /* game_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1009,6 +1035,8 @@
 				109D9ED016CAD7D700CF6A9A /* AppDelegate.m in Sources */,
 				109D9ED316CAD7D700CF6A9A /* HelloWorldLayer.m in Sources */,
 				109D9ED616CAD7D700CF6A9A /* IntroLayer.m in Sources */,
+				109A648716F4A9A50055317D /* GameLayer.m in Sources */,
+				109A648C16F4C40B0055317D /* MainMenuLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1112,6 +1140,7 @@
 				109D9EDB16CAD7D700CF6A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
