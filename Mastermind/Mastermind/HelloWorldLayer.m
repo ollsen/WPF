@@ -42,7 +42,7 @@
 	if( (self=[super init]) ) {
 		
 		// create and initialize a Label
-		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Hello World" fontName:@"Marker Felt" fontSize:64];
+		CCLabelTTF *label = [CCLabelTTF labelWithString:@"Mastermind" fontName:@"Marker Felt" fontSize:64];
 
 		// ask director for the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
@@ -53,6 +53,10 @@
 		// add the label as a child to this Layer
 		[self addChild: label];
 		
+        //
+        // Start Game
+        //
+        
 		
 		
 		//
