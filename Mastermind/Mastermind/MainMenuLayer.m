@@ -27,20 +27,25 @@
 {
     
     if( (self=[super init] )) {
-        CCLabelTTF *title = [CCLabelTTF labelWithString:@"Mastermind" fontName:@"Courier" fontSize:32];
         
         // ask director for the window size
 		CGSize size = [[CCDirector sharedDirector] winSize];
-        
-        title.position = ccp(size.width /2 , size.height - 100);
-        [self addChild: title];
         
         // new menu layer
         CCLayer *menuLayer = [[CCLayer alloc] init];
         [self addChild:menuLayer];
         
+        CCSprite *background;
+        
+        background = [CCSprite spriteWithFile:@"Defaultbg.png"];
+        background.position = ccp(size.width/2, size.height/2);
+        
+        [self addChild:background z:-1];
+        
+        
+        
         CCMenuItemImage *startButton = [CCMenuItemImage
-                                        itemFromNormalImage:@"startButton.png"
+                                        itemWithNormalImage:@"startButton.png"
                                         selectedImage:@"startButtonSelected.png"
                                         target:self
                                         selector:@selector(startGame:)];
